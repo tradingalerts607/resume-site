@@ -416,10 +416,10 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Engineered complex <strong>agentic tool-use scenarios</strong> for RLHF/SFT training data, selecting 5+ tools per scenario (Salesforce, Google Calendar, Gmail, Contacts, SMS) and generating realistic mock data via internal database generators</li>
-                            <li>Tagged required model capabilities per task — <strong>cross-tool entity matching, implicit intent resolution, multi-step planning, temporal reasoning, tool schema compliance</strong> — from a standardized capability taxonomy</li>
-                            <li>Designed two scenario archetypes: <strong>failure-first</strong> (model fails → targeted hints → rubric) and <strong>developer-instruction</strong> (model passes → instructions force legitimate fail) — both requiring the scenario to be complex enough to produce genuine model failures</li>
-                            <li>Authored <strong>golden trajectory prompts</strong>, defined expected outcomes, wrote task motivation and narrative documentation, and rebuilt scenarios from downstream when automated consistency checks flagged issues</li>
+                            <li>Built agentic evaluation tasks on the <strong>Lynx platform</strong> — designed task scenarios and task motivation (what makes the prompt difficult for the AI), selected 5+ tools per scenario (Salesforce, Google Calendar, Gmail, Contacts, SMS), generated realistic mock databases, and tagged required skills and capabilities from a standardized taxonomy</li>
+                            <li>Authored <strong>Golden Trajectory (GT) projects</strong>: wrote prompts engineered so the model fails initially, then authored progressive hint sequences until the model passes — success required both a genuine failure and a hint-guided recovery</li>
+                            <li>Authored <strong>Developer Instruction (DI) projects</strong>: wrote prompts the model passes cleanly, then crafted developer instructions that force a legitimate failure — success required both an initial pass and an instruction-induced fail</li>
+                            <li>Compared model outputs against expected outcomes, built <strong>verification rubrics</strong> for each scenario, and submitted completed tasks through automated consistency checks — rebuilding scenarios from downstream when checks flagged issues</li>
                         </ul>
                     </div>
                 </div>
