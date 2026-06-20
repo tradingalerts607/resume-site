@@ -152,8 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollHint = document.createElement('div');
         scrollHint.innerHTML = `
             <div style="
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
                 text-align: center;
-                margin-top: 2rem;
                 animation: fadeInUp 0.6s ease-out 1.5s both;
             ">
                 <div style="
