@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
                 entry.target.style.transitionDelay = `${index * 0.08}s`;
-                entry.target.classList.add('timeline-visible');
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
                 timelineObserver.unobserve(entry.target);
             }
         });
@@ -49,15 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timelineObserver.observe(item);
     });
 
-    // Add class-based reveal
-    const style = document.createElement('style');
-    style.textContent = `
-        .timeline-visible {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    `;
-    document.head.appendChild(style);
+    // Injected style tag removed in favor of inline styles
 
     // ─── SKILL TAG HOVER RIPPLE ───
     document.querySelectorAll('.skill-tag').forEach(tag => {
