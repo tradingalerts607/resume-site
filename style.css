@@ -177,8 +177,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    min-height: 60vh;
-    padding: 4rem 0 3rem;
+    padding: 3rem 0 2rem;
 }
 
 .tagline-above {
