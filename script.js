@@ -96,64 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeChar, 800);
     }
 
-    // ─── SMOOTH SECTION SCROLL HINT ───
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const scrollHint = document.createElement('div');
-        scrollHint.innerHTML = `
-            <div style="
-                position: absolute;
-                bottom: 2rem;
-                left: 50%;
-                transform: translateX(-50%);
-                text-align: center;
-                animation: fadeInUp 0.6s ease-out 1.5s both;
-            ">
-                <div style="
-                    display: inline-flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 0.3rem;
-                    color: var(--text-muted);
-                    font-size: 0.7rem;
-                    font-family: var(--font-mono);
-                    letter-spacing: 0.1em;
-                    cursor: pointer;
-                " id="scroll-hint">
-                    <span>SCROLL</span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="animation: bounce 2s infinite;">
-                        <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-            </div>
-        `;
-        hero.appendChild(scrollHint);
-
-        // Add bounce animation
-        const bounceStyle = document.createElement('style');
-        bounceStyle.textContent = `
-            @keyframes bounce {
-                0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-                40% { transform: translateY(4px); }
-                60% { transform: translateY(2px); }
-            }
-        `;
-        document.head.appendChild(bounceStyle);
-
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('#scroll-hint')) {
-                document.querySelector('#narrative').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-
-        // Fade out scroll hint on scroll
-        window.addEventListener('scroll', () => {
-            const hint = document.querySelector('#scroll-hint');
-            if (hint && window.scrollY > 100) {
-                hint.style.transition = 'opacity 0.3s ease';
-                hint.style.opacity = '0';
-            }
-        }, { passive: true });
-    }
+    // ─── SCROLL HINT REMOVED — was inflating hero grid height ───
 
 });
