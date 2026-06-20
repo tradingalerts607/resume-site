@@ -154,8 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div style="
                 text-align: center;
                 margin-top: 2rem;
-                opacity: 0;
-                animation: fadeInUp 0.6s ease-out 1.5s forwards;
+                animation: fadeInUp 0.6s ease-out 1.5s both;
             ">
                 <div style="
                     display: inline-flex;

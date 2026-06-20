@@ -178,7 +178,6 @@ a:hover {
     align-items: center;
     min-height: 60vh;
     padding: 4rem 0 3rem;
-    animation: fadeInUp 0.8s ease-out;
 }
 
 .tagline-above {
@@ -189,8 +188,6 @@ a:hover {
     text-transform: uppercase;
     color: var(--accent-primary);
     margin-bottom: 0.75rem;
-    opacity: 0;
-    animation: fadeInUp 0.6s ease-out 0.2s forwards;
 }
 
 .name {
@@ -199,8 +196,6 @@ a:hover {
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: var(--text-primary);
-    opacity: 0;
-    animation: fadeInUp 0.6s ease-out 0.35s forwards;
 }
 
 .name-accent {
@@ -215,8 +210,6 @@ a:hover {
     font-weight: 400;
     color: var(--text-secondary);
     margin-top: 1rem;
-    opacity: 0;
-    animation: fadeInUp 0.6s ease-out 0.5s forwards;
 }
 
 .hero-meta {
@@ -224,8 +217,6 @@ a:hover {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1.75rem;
-    opacity: 0;
-    animation: fadeInUp 0.6s ease-out 0.65s forwards;
 }
 
 .meta-pill {
@@ -252,8 +243,7 @@ a:hover {
 
 /* ─── CODE WINDOW ─── */
 .hero-visual {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out 0.5s forwards;
+    /* Animation removed for debugging */
 }
 
 .code-window {
