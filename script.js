@@ -5,52 +5,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ─── SCROLL REVEAL ───
-    const revealSections = document.querySelectorAll(
-        '.narrative-section, .duality-section, .skills-section, .projects-section, .experience-section, .education-section'
-    );
-
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                revealObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -60px 0px'
-    });
-
-    revealSections.forEach(section => {
-        revealObserver.observe(section);
-    });
-
-    // ─── TIMELINE ITEM STAGGER ───
-    const timelineItems = document.querySelectorAll('.timeline-item');
-
-    const timelineObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                entry.target.style.transitionDelay = `${index * 0.08}s`;
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                timelineObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
-    });
-
-    timelineItems.forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
-        timelineObserver.observe(item);
-    });
-
-    // Injected style tag removed in favor of inline styles
+    // ─── SCROLL REVEAL — DISABLED ───
+    // Section fade-ins and timeline staggers removed.
+    // All content is immediately visible via CSS.
 
     // ─── SKILL TAG HOVER RIPPLE ───
     document.querySelectorAll('.skill-tag').forEach(tag => {

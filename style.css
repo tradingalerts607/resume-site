@@ -1150,26 +1150,15 @@ a:hover {
     }
 }
 
-/* Scroll-triggered fade-in */
+/* Scroll-triggered fade-in — DISABLED, all sections visible immediately */
 .narrative-section,
 .duality-section,
 .skills-section,
 .projects-section,
 .experience-section,
 .education-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.narrative-section.visible,
-.duality-section.visible,
-.skills-section.visible,
-.projects-section.visible,
-.experience-section.visible,
-.education-section.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 /* ═══════════════════════════════════════════ RESPONSIVE ═══════════════════════════════════════════ */
