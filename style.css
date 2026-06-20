@@ -304,7 +304,7 @@ a:hover {
 
 /* ═══════════════════════════════════════════ NARRATIVE ═══════════════════════════════════════════ */
 .narrative-section {
-    padding-top: 0;
+    padding-top: var(--section-gap);
 }
 
 .narrative-card {
