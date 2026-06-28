@@ -372,6 +372,47 @@
                     </div>
                 </div>
 
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">04</span>
+                        <div class="project-badges">
+                            <span class="project-badge domain">Film & Media</span>
+                            <span class="project-badge role">Video Annotator</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Multimodal Video Evaluation — Project Voyager (Handshake AI)</h3>
+                    <p class="project-desc">Authored rubric-based prompts against video clips engineered to stump LLMs through precise audio-visual integration. Each prompt required genuine multimodal reasoning — answers could not be confirmed from audio or video alone — bounded by a 1–2 minute context window defined by two observable events.</p>
+
+                    <div class="reasoning-chain">
+                        <h4 class="chain-title">Prompt Design Constraints (3 Golden Rules)</h4>
+                        <div class="chain-steps">
+                            <div class="chain-step"><span class="step-num">1</span><span>Unambiguous — scoped to a specific two-event time window; any two viewers interpret it identically</span></div>
+                            <div class="chain-step"><span class="step-num">2</span><span>Verifiable — each rubric criterion independently confirmable from the clip without debate</span></div>
+                            <div class="chain-step"><span class="step-num">3</span><span>Genuine stump — model failure caused by video content difficulty, not prompt ambiguity</span></div>
+                        </div>
+                    </div>
+
+                    <div class="di-section">
+                        <h4 class="chain-title">Sample Task — <em>The Woman in Green</em> (18-Criterion Rubric)</h4>
+                        <p class="project-desc" style="margin-bottom: 0.5rem; font-size: 0.85rem;">Prompt tracked fine-grained physical actions performed by Dr. Watson under hypnosis across a 66-second window [52:07–53:13], synchronized against Dr. Onslow's verbal commands.</p>
+                        <div class="di-list">
+                            <div class="di-item"><strong>14 positive criteria:</strong> atomic action sequence — stands up, turns, guided to chair, lifts left leg, pivoted 90°, left foot on chair, mimics untying, slips shoe off, removes sock, rolls trouser leg, right foot on chair, removes right foot, turns around, sits back down</div>
+                            <div class="di-item"><strong>4 negative criteria:</strong> hallucination guards — did not untie shoe, did not roll both trouser legs, did not remove jacket, no unlisted actions attributed</div>
+                        </div>
+                    </div>
+
+                    <div class="failure-modes">
+                        <h4 class="chain-title">Why Models Failed</h4>
+                        <div class="failure-tags">
+                            <span class="failure-tag">Wrong foot / side confusion</span>
+                            <span class="failure-tag">Hallucinated untying action</span>
+                            <span class="failure-tag">Audio-visual desync</span>
+                            <span class="failure-tag">Fine-grained action omission</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Portfolio summary -->
@@ -446,6 +487,7 @@
                             <li>Designed prompts using <strong>attributes and anchors</strong> (never specifics), requiring models to traverse history, geography, law, and academia to extract a single verifiable answer — with at least 1 of 8 model runs required to fail</li>
                             <li>Wrote per-URL step-by-step verification explanations, decomposed into <strong>atomic facts (fan-out)</strong> that each map to a specific source location — used to build the golden trajectory and evaluation rubric</li>
                             <li>Navigated <strong>10–15+ QA checkpoints</strong> per task: ambiguity checks, unnecessary constraint checks, source validation, URL verification, and automated model failure confirmation</li>
+                            <li>Contributed to <strong>Project Voyager</strong> — multimodal video evaluation track — authoring rubric-based prompts that required genuine audio-visual integration to answer, with 18-criterion rubrics and negative hallucination guards to expose fine-grained model failure modes</li>
                         </ul>
                     </div>
                 </div>
