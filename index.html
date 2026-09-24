@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -384,7 +384,7 @@
                             <span class="project-badge role">Video Annotator</span>
                         </div>
                     </div>
-                    <h3 class="project-title">Multimodal Video Evaluation — Project Voyager (Handshake AI)</h3>
+                    <h3 class="project-title">Multimodal Video Evaluation Task (Handshake AI)</h3>
                     <p class="project-desc">Authored rubric-based prompts against video clips engineered to stump LLMs through precise audio-visual integration. Each prompt required genuine multimodal reasoning — answers could not be confirmed from audio or video alone — bounded by a 1–2 minute context window defined by two observable events.</p>
 
                     <div class="reasoning-chain">
@@ -412,6 +412,38 @@
                             <span class="failure-tag">Hallucinated untying action</span>
                             <span class="failure-tag">Audio-visual desync</span>
                             <span class="failure-tag">Fine-grained action omission</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">05</span>
+                        <div class="project-badges">
+                            <span class="project-badge domain">Speech & Multimodal AI</span>
+                            <span class="project-badge role">Multimodal Annotator</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Dual-Track Speech Characteristics & Audio-Visual Annotation (Handshake AI)</h3>
+                    <p class="project-desc">Executed a dual-track RLHF annotation project for frontier multimodal AI models. Track 1 evaluated speech characteristics—acoustics, tone, cadence, emotion/intent, and transcript fidelity. Track 2 evaluated audio-visual streams for synchronized temporal action tracking, multi-speaker spatial attribution, and hallucination prevention.</p>
+
+                    <div class="reasoning-chain">
+                        <h4 class="chain-title">Annotation Workflow Tracks</h4>
+                        <div class="chain-steps">
+                            <div class="chain-step"><span class="step-num">1</span><span><strong>Speech Track:</strong> Acoustic environment tagging, vocal tone/emphasis, cadence/prosody analysis, & transcript alignment</span></div>
+                            <div class="chain-step"><span class="step-num">2</span><span><strong>Audio-Visual Track:</strong> Temporal event synchronization, multi-speaker attribution, fine-grained action sequence validation</span></div>
+                            <div class="chain-step"><span class="step-num">3</span><span><strong>Evaluation & Guardrails:</strong> Negative hallucination tagging, rubric scoring, and 10–15+ QA checkpoint validation</span></div>
+                        </div>
+                    </div>
+
+                    <div class="failure-modes">
+                        <h4 class="chain-title">Failure Modes Identified</h4>
+                        <div class="failure-tags">
+                            <span class="failure-tag">Speech prosody & tone misattribution</span>
+                            <span class="failure-tag">Ambient noise vs speech boundary overlap</span>
+                            <span class="failure-tag">Audio-visual temporal desync</span>
+                            <span class="failure-tag">Multi-speaker overlap attribution miss</span>
                         </div>
                     </div>
                 </div>
@@ -460,10 +492,10 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Built agentic evaluation tasks on the <strong>Lynx platform</strong> — designed task scenarios and task motivation (what makes the prompt difficult for the AI), selected 5+ tools per scenario (Salesforce, Google Calendar, Gmail, Contacts, SMS), generated realistic mock databases, and tagged required skills and capabilities from a standardized taxonomy</li>
-                            <li>Authored <strong>Golden Trajectory (GT) projects</strong>: wrote prompts engineered so the model fails initially, then authored progressive hint sequences until the model passes — success required both a genuine failure and a hint-guided recovery</li>
-                            <li>Authored <strong>Developer Instruction (DI) projects</strong>: wrote prompts the model passes cleanly, then crafted developer instructions that force a legitimate failure — success required both an initial pass and an instruction-induced fail</li>
-                            <li>Compared model outputs against expected outcomes, built <strong>verification rubrics</strong> for each scenario, and submitted completed tasks through automated consistency checks — rebuilding scenarios from downstream when checks flagged issues</li>
+                            <li>Built agentic evaluation tasks on an <strong>internal task evaluation platform</strong> — designed task scenarios and task motivation (what makes the prompt difficult for the AI), selected 5+ tools per scenario (Salesforce, Google Calendar, Gmail, Contacts, SMS), generated realistic mock databases, and tagged required skills and capabilities from a standardized taxonomy.</li>
+                            <li>Authored <strong>Golden Trajectory (GT) projects</strong>: wrote prompts engineered so the model fails initially, then authored progressive hint sequences until the model passes — success required both a genuine failure and a hint-guided recovery.</li>
+                            <li>Authored <strong>Developer Instruction (DI) projects</strong>: wrote prompts the model passes cleanly, then crafted developer instructions that force a legitimate failure — success required both an initial pass and an instruction-induced fail.</li>
+                            <li>Compared model outputs against expected outcomes, built <strong>verification rubrics</strong> for each scenario, and submitted completed tasks through automated consistency checks — rebuilding scenarios from downstream when checks flagged issues.</li>
                         </ul>
                     </div>
                 </div>
@@ -477,20 +509,21 @@
                     <div class="timeline-content">
                         <div class="job-header">
                             <div>
-                                <h3 class="job-title">AI Task Designer — Contract</h3>
+                                <h3 class="job-title">AI Task Designer & Multimodal Evaluator — Contract</h3>
                                 <p class="job-company">Handshake AI</p>
                             </div>
                             <div class="job-meta">
-                                <span class="job-date">Project-Based</span>
+                                <span class="job-date">Apr 2026 — Aug 2026</span>
                                 <span class="job-location">Remote</span>
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Authored <strong>web-source golden trajectories</strong> for RLHF/SFT training data, working backwards from deterministic answers to construct multi-hop reasoning chains across 5–8 niche, non-indexed URLs spanning unrelated domains</li>
-                            <li>Designed prompts using <strong>attributes and anchors</strong> (never specifics), requiring models to traverse history, geography, law, and academia to extract a single verifiable answer — with at least 1 of 8 model runs required to fail</li>
-                            <li>Wrote per-URL step-by-step verification explanations, decomposed into <strong>atomic facts (fan-out)</strong> that each map to a specific source location — used to build the golden trajectory and evaluation rubric</li>
-                            <li>Navigated <strong>10–15+ QA checkpoints</strong> per task: ambiguity checks, unnecessary constraint checks, source validation, URL verification, and automated model failure confirmation</li>
-                            <li>Contributed to <strong>Project Voyager</strong> — multimodal video evaluation track — authoring rubric-based prompts that required genuine audio-visual integration to answer, with 18-criterion rubrics and negative hallucination guards to expose fine-grained model failure modes</li>
+                            <li><strong>Multimodal Speech & Audio/Video Evaluation Project (Jun 2026 – Aug 2026):</strong> Executed dual-track speech characteristics annotation (vocal tone, prosody, cadence, acoustics, transcript alignment) and audio-visual media evaluation (precise timestamping, action tracking, audio-video synchronization, and multi-criterion rubric scoring).</li>
+                            <li><strong>Web-Source Golden Trajectory Authoring Project (Apr 2026 – Jun 2026):</strong> Authored web-source golden trajectories for RLHF/SFT training data — working backwards from deterministic answers to construct multi-hop reasoning chains across 5–8 niche, non-indexed URLs spanning unrelated domains (history, geography, law, academia).</li>
+                            <li>Designed prompts using <strong>attributes and anchors</strong> (never specifics), requiring models to traverse complex sources to extract a single verifiable answer — with at least 1 of 8 model runs required to fail.</li>
+                            <li>Wrote per-URL step-by-step verification explanations, decomposed into <strong>atomic facts (fan-out)</strong> that each map to a specific source location — used to build golden trajectories and evaluation rubrics.</li>
+                            <li>Navigated <strong>10–15+ QA checkpoints</strong> per task: ambiguity checks, unnecessary constraint checks, source validation, URL verification, and automated model failure confirmation.</li>
+                            <li>Contributed to <strong>multimodal video evaluation tracks</strong> — authoring 18-criterion rubrics and negative hallucination guards to expose fine-grained model failure modes in complex media clips.</li>
                         </ul>
                     </div>
                 </div>
@@ -513,10 +546,10 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Advising clients on risk management across <strong>life, health, property, and casualty</strong> portfolios — assessing exposures, recommending coverage strategies, and building long-term financial protection plans</li>
-                            <li>Managing the full sales cycle: lead generation, needs-based analysis, quoting, policy binding, and post-sale client servicing</li>
-                            <li>Launched <a href="https://lainsurancequotes.com" target="_blank"><strong>lainsurancequotes.com</strong></a> — a self-built digital branding and lead generation platform designed to capture and qualify local agency prospects</li>
-                            <li>Navigated corporate onboarding processes, IFR documentation, and retention initiatives with precision and compliance</li>
+                            <li>Advising clients on risk management across <strong>life, health, property, and casualty</strong> portfolios — assessing exposures, recommending coverage strategies, and building long-term financial protection plans.</li>
+                            <li>Managing the full sales cycle: lead generation, needs-based analysis, quoting, policy binding, and post-sale client servicing.</li>
+                            <li>Launched <a href="https://lainsurancequotes.com" target="_blank"><strong>lainsurancequotes.com</strong></a> — a self-built digital branding and lead generation platform designed to capture and qualify local agency prospects.</li>
+                            <li>Navigated corporate onboarding processes, IFR documentation, and retention initiatives with precision and compliance.</li>
                         </ul>
                     </div>
                 </div>
@@ -539,9 +572,9 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Built a <strong>custom analytical framework</strong> to streamline decision-making and reduce cognitive bias — the same systems-thinking that drives effective AI workflow design</li>
-                            <li>Synthesized on-chain metrics, sentiment data, and macroeconomic signals to anticipate market shifts, achieving <strong>15–20% monthly ROI</strong></li>
-                            <li>Applied rigorous risk management: stop-loss logic, capital allocation models, and portfolio balancing — maintaining <strong>&lt;10% drawdown</strong> across cycles</li>
+                            <li>Built a <strong>custom analytical framework</strong> to streamline decision-making and reduce cognitive bias — the same systems-thinking that drives effective AI workflow design.</li>
+                            <li>Synthesized on-chain metrics, sentiment data, and macroeconomic signals to anticipate market shifts, achieving <strong>15–20% monthly ROI</strong>.</li>
+                            <li>Applied rigorous risk management: stop-loss logic, capital allocation models, and portfolio balancing — maintaining <strong>&lt;10% drawdown</strong> across cycles.</li>
                         </ul>
                         <div class="job-reframe">
                             <span class="reframe-label">How this builds AI skills →</span>
@@ -568,11 +601,11 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Drove <strong>33% year-over-year sales growth</strong> through tailored recommendations and trust-based relationships</li>
-                            <li>Managed full sales cycle: lead generation, needs-based analysis, quoting, policy binding, and post-sale client servicing</li>
-                            <li>Trained team members on <strong>Salesforce optimization</strong> (lead prioritization, tracking, data integrity) to deliver a <strong>20% productivity lift</strong></li>
-                            <li>Maintained <strong>80%+ Drive Safe &amp; Save setup rate</strong> and engineered lead provider partnerships (QuoteWizard, ZipQuote) to boost lead flow by <strong>20%</strong></li>
-                            <li>Navigated corporate processes including onboarding, IFR documentation, and retention initiatives with precision and compliance</li>
+                            <li>Drove <strong>33% year-over-year sales growth</strong> through tailored recommendations and trust-based relationships.</li>
+                            <li>Managed full sales cycle: lead generation, needs-based analysis, quoting, policy binding, and post-sale client servicing.</li>
+                            <li>Trained team members on <strong>Salesforce optimization</strong> (lead prioritization, tracking, data integrity) to deliver a <strong>20% productivity lift</strong>.</li>
+                            <li>Maintained <strong>80%+ Drive Safe &amp; Save setup rate</strong> and engineered lead provider partnerships (QuoteWizard, ZipQuote) to boost lead flow by <strong>20%</strong>.</li>
+                            <li>Navigated corporate processes including onboarding, IFR documentation, and retention initiatives with precision and compliance.</li>
                         </ul>
                         <div class="job-reframe">
                             <span class="reframe-label">How this builds AI skills →</span>
@@ -620,9 +653,9 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Generated <strong>50+ qualified leads/month</strong> via 100+ daily outbound consultative calls, and managed social ad campaigns (Facebook, Instagram, LinkedIn) delivering consistent <strong>20%+ ROI</strong></li>
-                            <li>Configured and optimized <strong>Prospector+ CRM</strong> (market segmentation, performance dashboards, bonus structures) and designed automated multi-touch drip campaigns via Agent Advertise System</li>
-                            <li>Synthesized performance metrics across Prospector+, Agent Analytics, and Control-D to identify trends, recalibrate marketing strategy, and provide leadership with actionable insights</li>
+                            <li>Generated <strong>50+ qualified leads/month</strong> via 100+ daily outbound consultative calls, and managed social ad campaigns (Facebook, Instagram, LinkedIn) delivering consistent <strong>20%+ ROI</strong>.</li>
+                            <li>Configured and optimized <strong>Prospector+ CRM</strong> (market segmentation, performance dashboards, bonus structures) and designed automated multi-touch drip campaigns via Agent Advertise System.</li>
+                            <li>Synthesized performance metrics across Prospector+, Agent Analytics, and Control-D to identify trends, recalibrate marketing strategy, and provide leadership with actionable insights.</li>
                         </ul>
                         <div class="job-reframe">
                             <span class="reframe-label">How this builds AI skills →</span>
@@ -649,9 +682,9 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Diagnosed complex DSL connectivity and hardware issues using <strong>Adtran systems</strong> (line cards, SNR margins, port configurations) and executed system-level diagnostics to identify faults</li>
-                            <li>Managed <strong>DNS infrastructure</strong> (A, PTR, NS records) and resolved IP conflicts via DHCP server administration, monitoring real-time negotiations to prevent latency or routing failures</li>
-                            <li>Translated complex technical network diagnostics into clear, <strong>jargon-free guidance</strong> to accelerate issue resolution and improve client satisfaction</li>
+                            <li>Diagnosed complex DSL connectivity and hardware issues using <strong>Adtran systems</strong> (line cards, SNR margins, port configurations) and executed system-level diagnostics to identify faults.</li>
+                            <li>Managed <strong>DNS infrastructure</strong> (A, PTR, NS records) and resolved IP conflicts via DHCP server administration, monitoring real-time negotiations to prevent latency or routing failures.</li>
+                            <li>Translated complex technical network diagnostics into clear, <strong>jargon-free guidance</strong> to accelerate issue resolution and improve client satisfaction.</li>
                         </ul>
                     </div>
                 </div>
@@ -674,7 +707,7 @@
                             </div>
                         </div>
                         <ul class="job-bullets">
-                            <li>Resolved network issues (<strong>DSL, VoIP, IPTV, email</strong>) and conflicts for technicians, and supported **wireless AP/mesh node deployments** with clear documentation</li>
+                            <li>Resolved network issues (<strong>DSL, VoIP, IPTV, email</strong>) and conflicts for technicians, and supported <strong>wireless AP/mesh node deployments</strong> with clear documentation.</li>
                         </ul>
                     </div>
                 </div>
