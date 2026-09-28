@@ -37,9 +37,9 @@
     --border-accent: rgba(99, 102, 241, 0.3);
 
     /* Spacing */
-    --section-gap: 1.25rem;
+    --section-gap: 1rem;
     --card-radius: 14px;
-    --card-padding: 1.25rem;
+    --card-padding: 1rem;
 
     /* Typography */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -144,7 +144,7 @@ a:hover {
     z-index: 1;
     max-width: 960px;
     margin: 0 auto;
-    padding: 1.25rem 1.25rem 1rem;
+    padding: 1rem 1rem 1rem;
 }
 
 /* ─── SECTION LABEL ─── */
@@ -177,7 +177,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    padding: 1.5rem 0 1rem;
+    padding: 1rem 0 1rem;
 }
 
 .tagline-above {
@@ -259,7 +259,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.85rem 1.25rem;
+    padding: 0.85rem 1rem;
     background: rgba(255, 255, 255, 0.02);
     border-bottom: 1px solid var(--border-subtle);
 }
@@ -282,7 +282,7 @@ a:hover {
 }
 
 .code-body {
-    padding: 1.5rem;
+    padding: 1rem;
     font-family: var(--font-mono);
     font-size: 0.82rem;
     line-height: 1.8;
@@ -311,7 +311,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.25rem;
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-card);
     position: relative;
@@ -389,7 +389,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 1.25rem;
+    padding: 1rem;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -431,7 +431,7 @@ a:hover {
 .duality-card li {
     font-size: 0.86rem;
     color: var(--text-secondary);
-    padding-left: 1.1rem;
+    padding-left: 1rem;
     line-height: 1.4;
     position: relative;
 }
@@ -491,7 +491,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 1.75rem;
+    padding: 1.25rem;
     transition: border-color 0.3s ease;
 }
 
@@ -555,7 +555,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 2.25rem;
+    padding: 1.25rem;
     position: relative;
     overflow: hidden;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -838,7 +838,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 2rem;
+    padding: 1.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -993,7 +993,7 @@ a:hover {
 .job-bullets li {
     font-size: 0.9rem;
     color: var(--text-secondary);
-    padding-left: 1.25rem;
+    padding-left: 1rem;
     position: relative;
     line-height: 1.6;
 }
@@ -1061,7 +1061,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 1.25rem 1.25rem;
+    padding: 1rem 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1170,7 +1170,7 @@ a:hover {
     .hero {
         grid-template-columns: 1fr;
         min-height: auto;
-        padding: 3rem 0 2rem;
+        padding: 2rem 0 1rem;
         gap: 2rem;
     }
 
