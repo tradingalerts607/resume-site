@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Enforce LF line endings across all platforms (HTML, CSS, JS, Markdown, etc.)
+* text=auto eol=lf
