@@ -216,7 +216,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 1.75rem;
 }
 
 .meta-pill {
@@ -332,7 +332,7 @@ a:hover {
     font-size: 1rem;
     color: var(--text-secondary);
     margin-bottom: 0.85rem;
-    line-height: 1.25;
+    line-height: 1.65;
 }
 
 .narrative-card p:last-child {
@@ -646,7 +646,7 @@ a:hover {
     background: rgba(20, 184, 166, 0.08);
     border: 1px solid rgba(20, 184, 166, 0.2);
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .answer-label {
@@ -667,7 +667,7 @@ a:hover {
 
 /* Reasoning chain */
 .reasoning-chain {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .chain-title {
@@ -720,7 +720,7 @@ a:hover {
     padding: 0.8rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .tool-step {
@@ -742,7 +742,7 @@ a:hover {
 
 /* Developer Instructions */
 .di-section {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .di-list {
@@ -773,7 +773,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .result-stat {
@@ -834,7 +834,7 @@ a:hover {
 
 /* Portfolio summary */
 .portfolio-summary {
-    margin-top: 1rem;
+    margin-top: 2rem;
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
@@ -935,7 +935,7 @@ a:hover {
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
     padding: var(--card-padding);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
