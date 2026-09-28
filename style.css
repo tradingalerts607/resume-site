@@ -39,7 +39,7 @@
     /* Spacing */
     --section-gap: 1.5rem;
     --card-radius: 16px;
-    --card-padding: 1.5rem;
+    --card-padding: 1rem;
 
     /* Typography */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
