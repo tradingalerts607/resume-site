@@ -37,9 +37,9 @@
     --border-accent: rgba(99, 102, 241, 0.3);
 
     /* Spacing */
-    --section-gap: 1.5rem;
+    --section-gap: 2.5rem;
     --card-radius: 16px;
-    --card-padding: 1.5rem;
+    --card-padding: 2rem;
 
     /* Typography */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -152,7 +152,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 0.85rem;
+    margin-bottom: 1.25rem;
 }
 
 .label-line {
@@ -311,7 +311,7 @@ a:hover {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
-    padding: 1.5rem 1.75rem;
+    padding: 2.5rem;
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-card);
     position: relative;
@@ -364,8 +364,8 @@ a:hover {
 
 .narrative-closer {
     border-top: 1px solid var(--border-subtle);
-    padding-top: 0.85rem;
-    margin-top: 1rem !important;
+    padding-top: 1.2rem;
+    margin-top: 1.5rem !important;
 }
 
 .narrative-closer strong {
